@@ -206,6 +206,11 @@ interface Social {
    * Email
    */
   email?: string;
+
+  /**
+   * Discord username
+   */
+  discord?: string;
 }
 
 interface Resume {

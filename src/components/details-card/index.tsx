@@ -21,7 +21,7 @@ import {
 } from 'react-icons/fa';
 import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
-import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
+import { RiDiscordFill, RiMailFill, RiPhoneFill } from 'react-icons/ri';
 import { SiResearchgate, SiTwitter, SiUdemy } from 'react-icons/si';
 import { Profile } from '../../interfaces/profile';
 import {
@@ -366,6 +366,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Email:"
                   value={social.email}
                   link={`mailto:${social.email}`}
+                />
+              )}
+              {social?.discord && (
+                <ListItem
+                  icon={<RiDiscordFill />}
+                  title="Discord:"
+                  value={social.discord}
+                  link={`https://discord.com/app`}
                 />
               )}
             </Fragment>
